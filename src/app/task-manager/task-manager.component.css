@@ -1,0 +1,93 @@
+.theheader {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins";
+
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thetasks {
+
+  border-style: groove;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 20px;
+  border-color: pink;
+  border-style: ridge;
+  justify-content: center;
+
+}
+
+input,
+button {
+  background: transparent;
+  padding: 4px;
+  margin: 0;
+  border-bottom: 1px solid pink;
+  border-radius: 2px;
+}
+
+button {
+  border: 2px solid pink;
+  border-radius: 10px;
+}
+
+.thetasks .title {
+  flex-basis: 100%;
+}
+
+.unchecked,
+.checked {
+  flex-basis: 50%;
+}
+
+.submitbutton {
+  cursor: pointer;
+}
+
+.searchinput {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.fa-times {
+  font-size: 30px;
+  color: red;
+}
+
+.fa-check {
+  font-size: 30px;
+  color: green;
+}
+
+.tasks-history {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cnt {
+  display: flex;
+
+}
+
+.cnt .taskshistory {
+  flex-basis: 35%;
+}
