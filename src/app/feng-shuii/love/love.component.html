@@ -1,0 +1,31 @@
+<div class="love center">
+  <h3> To find love compatibilty</h3>
+
+  <div class="center split-x flex-parent">
+    <birthdate-input #user1 [button]='false'> </birthdate-input>
+    <birthdate-input #user2 [button]='false'></birthdate-input>
+    <div class="center split-x flex-parent" *ngIf="love$ | async as result">
+      <div class="images center split-x">
+        <figure>
+          <figcaption>{{result.profile1.sign}}</figcaption>
+          <img [src]="'../../assets/signs/'+result.profile1.sign+'.png'" alt="">
+        </figure>
+
+        <figure>
+          <figcaption>{{result.profile2.sign}}</figcaption>
+          <img [src]="'../../assets/signs/'+result.profile2.sign+'.png'" alt="">
+        </figure>
+      </div>
+      <hr>
+      <div class="compatibilities">
+        <p><strong>sign:</strong> {{result.signCompatibility}}</p>
+        <p><strong>love:</strong> {{result.loveCompatibility}}</p>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)="requestLove()"> Submit</button>
+
+
+</div>

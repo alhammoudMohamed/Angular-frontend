@@ -20,9 +20,8 @@
       <h2 class="title">Add a Task</h2>
       <form id="addForm" class="something">
         <input name="task" [(ngModel)]="task" type="text" class="addtaskinput" id="item" placeholder="write a task" />
-        <input name="deadline" [(ngModel)]="deadline" type="date"
-          class="deadline" />
-        <button (click)="onSubmitButton()" type="button" class="submitbutton" id="deadline" value="Submit">Submit</button>
+        <input name="deadline" [(ngModel)]="deadline" type="date"/>
+        <button *ngIf="button" (click) = "onSubmitButton()" class="btn btn-primary"> Add Task</button>
       </form>
 
     </div>
@@ -35,16 +34,14 @@
         <div class="unchecked">
           <h5>Unfinished tasks <i class="fas fa-times"></i></h5>
           <ul id="items" class="list-group">
-            <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete"><i
-                  class="fas fa-trash-alt"></i></button>
+            <li class="list-group-item">Item 1 
             </li>
           </ul>
         </div>
         <div class="checked">
           <h5>Finished tasks <i class="fas fa-check"></i></h5>
           <ul id="items-checked" class="list-group">
-            <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete"><i
-                  class="fas fa-trash-alt"></i></button>
+            <li class="list-group-item">Item 2 
             </li>
           </ul>
         </div>

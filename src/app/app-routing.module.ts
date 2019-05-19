@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyWebsiteComponent } from './my-website/my-website.component';
-import { AppComponent } from './app.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'MyWebsite',
     component: MyWebsiteComponent
   },
+  {
+    path: 'heroes',
+    component: HeroesComponent
+  }
 ];
 
 @NgModule({

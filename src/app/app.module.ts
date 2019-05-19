@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyWebsiteComponent } from './my-website/my-website.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroComponent } from './hero/hero.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskManagerComponent,
     ChessBoardComponent,
-    MyWebsiteComponent
+    MyWebsiteComponent,
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

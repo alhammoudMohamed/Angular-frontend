@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Todo } from './todo';
 
 @Component({
   selector: 'app-task-manager',
@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./task-manager.component.css']
 })
 export class TaskManagerComponent implements OnInit {
-  @Input() task: string;
-  @Input() deadline: string;
+  todos: Todo[];
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,10 @@
+<div class="whole-page">
+<input [(ngModel)]="date" type="date">
+<button *ngIf="button" (click)="getDate()" type="button" class="btn btn-primary"> submit</button>
+
+
+<div class="sign" *ngIf="sign | async as result">
+   <p > {{ result.sign }}</p>
+  <img class="img" width="135px" [src]="'../../assets/signs/'+result.sign+'.png'" alt="">
+</div>
+</div>
